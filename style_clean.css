@@ -312,20 +312,7 @@ td p {
    INTERACTIVE
 ================================ */
 .theme-toggle {
-	position: fixed;
-	top: var(--fluid-space-s);
-	right: var(--fluid-space-s);
-	border: 0;
-	outline: 0;
-	z-index: 100; /* above everything */
-	background: transparent;
-	color: var(--color-fg);
-	line-height: 1;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	transition: all 200ms ease;
+	display: none;
 }
 
 .theme-toggle:hover {
