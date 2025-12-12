@@ -326,9 +326,6 @@ td p {
 	justify-content: center;
 	cursor: pointer;
 	transition: all 200ms ease;
-	padding: var(--space-2);
-	min-width: 2.5rem;
-	min-height: 2.5rem;
 	border-radius: 0.25rem;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -341,9 +338,7 @@ td p {
 }
 
 .theme-toggle__icon {
-	font-size: 1.5em;
-	font-weight: var(--font-weight-medium);
-	display: block;
+	font-size: 1.1em;
 }
 
 /* Let it react to colour changes in dark mode automatically */
