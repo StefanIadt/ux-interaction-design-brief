@@ -307,10 +307,10 @@ td p {
 	position: fixed;
 	top: var(--fluid-space-s);
 	right: var(--fluid-space-s);
-	border: var(--border-thin) solid var(--border-color);
+	border: 0;
 	outline: 0;
 	z-index: 100; /* above everything */
-	background: var(--color-bg);
+	background: transparent;
 	color: var(--color-fg);
 	line-height: 1;
 	display: inline-flex;
@@ -318,15 +318,10 @@ td p {
 	justify-content: center;
 	cursor: pointer;
 	transition: all 200ms ease;
-	border-radius: 0.25rem;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .theme-toggle:hover {
 	transform: translateX(2px);
-	background: var(--primary);
-	color: var(--color-bg);
-	border-color: var(--primary);
 }
 
 .theme-toggle__icon {
