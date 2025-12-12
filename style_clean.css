@@ -202,6 +202,7 @@ header {
 ================================ */
 
 body {
+	position: relative;
 	background: var(--color-bg);
 	color: var(--color-fg);
 	font-family: var(--font-family-base);
@@ -311,12 +312,12 @@ td p {
    INTERACTIVE
 ================================ */
 .theme-toggle {
-	position: absolute;
+	position: fixed;
 	top: var(--fluid-space-s);
 	right: var(--fluid-space-s);
 	border: 0;
 	outline: 0;
-	z-index: 10; /* above logo */
+	z-index: 100; /* above everything */
 	background: transparent;
 	color: var(--color-fg);
 	line-height: 1;
@@ -325,6 +326,9 @@ td p {
 	justify-content: center;
 	cursor: pointer;
 	transition: all 200ms ease;
+	padding: var(--space-2);
+	min-width: 2.5rem;
+	min-height: 2.5rem;
 }
 
 .theme-toggle:hover {
@@ -332,7 +336,8 @@ td p {
 }
 
 .theme-toggle__icon {
-	font-size: 1.1em;
+	font-size: 1.5em;
+	font-weight: var(--font-weight-medium);
 }
 
 /* Let it react to colour changes in dark mode automatically */
